@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title id="title">text shadow</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="nav">
+	<div class="container">
+		<a href="./index.html" class="navbar"><b>C</b>orlio</a>
+		<ul class="unoreder-list">
+			<li class="link"><a href="">Home</a></li>
+			<li class="link"><a href="">About</a></li>
+			<li class="link"><a href="">List</a></li>
+			<li class="link"><a href="">Disclaimer</a></li>
+		</ul>
+	</div>
+</nav>
+<!-- home -->
+<div class="container-home">
+	<div class="container-inner">
+		<h2 class="header"> <b>C</b>ss <b>s</b>tyling From <b>C</b>orlio</h2>
+		<p class="p">this is a css styling and code generator</p>
+		<br>
+		<button class="btn-home">More Reviewe</button>
+	</div>
+</div>
+<!-- work -->
+
+<div class="container-textshadow">
+	<div class="container-inner">
+		<div id="box-shadow" contenteditable> Css Styling From Corlio</div>
+		<div class="input-outer">
+
+			<div class="container-card">
+			<b>Box-shadow h-shadow</b><br>
+			<input type="range" class="input" id="first" min="0" max="40">
+			</div>
+
+			<div class="container-card">
+			<b>Box-shadow v-shadow</b><br>
+			<input type="range" id="second" class="input" min="0" max="40">
+			</div>
+
+			<div class="container-card">
+			<b>Box-shadow blur-radius</b><br>
+			<input type="range" id="last" class="input" min="0" max="50">
+			</div>
+
+			<div class="container-card">
+			<b>Box-shadow color</b><br>
+			<input type="color" id="color" >
+			</div>
+
+			<div class="container-card">
+			<b>Box color</b><br>
+			<input type="color" id="color-text" >
+			</div>
+		</div>
+	</div>
+	<div class="code-show">
+		<h3>Code</h3>
+		<span id="code">box-shadow:<b id="f"></b> <b id="s"></b> <b id="l"></b> <b id="c"></b>  </span><br>
+		<span id="text-color">background-color:<b id="ct"></span>
+	</div>
+</div>
+
+
+<!-- footer -->
+<footer class="container-footer">
+	<div class="container-outer">
+		<div class="inner">
+			<a href=""><b>Facebook</b></a>
+			<a href=""><b>Github</b></a>
+			<a href=""><b>Instagram</b></a>
+		</div>
+		<h3 class="copyright">Copyright 2022</h3>
+	</div>
+</footer>
+<script>
+
+	setInterval(()=>{
+		let first = document.getElementById('first').value
+		let second = document.getElementById('second').value
+		let last = document.getElementById('last').value
+		let color = document.getElementById('color').value
+		let ctext = document.getElementById('color-text').value
+		document.getElementById('f').innerText=` ${first}px `;
+		document.getElementById('s').innerText=` ${second}px `;
+		document.getElementById('l').innerText=` ${last}px `;
+		document.getElementById('c').innerText=` ${color};`;
+		document.getElementById('ct').innerText=` ${ctext}; `;
+		document.getElementById('box-shadow').style.boxShadow=`${first}px ${second}px ${last}px ${color}`;
+		document.getElementById('box-shadow').style.backgroundColor=ctext;
+
+	},1000)
+</script>
+</body>
+</html>
