@@ -3,16 +3,16 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title id="title">text shadow</title>
+	<title id="title">border-radius</title>
 	<link rel="stylesheet" href="style.css">
 	<script type="text/javascript" src="index.js"></script>
+	
 </head>
 <body>
 <nav class="nav">
 	<div class="container">
 		<a href="./index.html" class="navbar"><b>C</b>orlio</a>
-				
-		<div class="dropdown">
+	<div class="dropdown">
 		  <button class="dropbtn">CSS</button>
 		  <div class="dropdown-content">
 		  <a href="./text-shadow.html">Text Shadow</a>
@@ -25,7 +25,6 @@
 		  <a href="./filter.html">Filter</a>
 		  </div>
 		</div>
-
 		
 	</div>
 </nav>
@@ -40,45 +39,49 @@
 </div>
 <!-- work -->
 
-<div class="container-textshadow">
+<div class="container-borderRadius">
 	<div class="container-inner">
-		<span id="span" contenteditable> Css Styling From Corlio</span>
-		<div class="input-outer">
-
-			<div class="container-card">
-			<b>Text-shadow h-shadow</b><br>
-			<input type="range" class="input" id="first" min="0" max="40">
+		<div class="container-outer">
+		
+			<div class="container-main" id="span">
 			</div>
 
-			<div class="container-card">
-			<b>Text-shadow v-shadow</b><br>
-			<input type="range" id="second" class="input" min="0" max="40">
+		</div>
+
+		<div class="container-control">
+		
+			<div class="card">
+			<b>border-top-left-radius</b><br>	
+			<input type="range" class="input" value="4" id="tl" min="0" max="100">
 			</div>
 
-			<div class="container-card">
-			<b>Text-shadow blur-radius</b><br>
-			<input type="range" id="last" class="input" min="0" max="50">
+			<div class="card">
+			<b>border-top-right-radius</b>	<br>
+			<input type="range" class="input" value="38" id="tr" min="0" max="100">
 			</div>
 
-			<div class="container-card">
-			<b>text-shadow color</b><br>
-			<input type="color" id="color" >
+			<div class="card">
+			<b>border-bottom-left-radius</b>	<br>
+			<input type="range" class="input" value="70" id="bl" min="0" max="100">
 			</div>
 
-			<div class="container-card">
-			<b>text color</b><br>
-			<input type="color" id="color-text" >
+			<div class="card">
+			<b>border-bottom-right-radius</b>	<br>
+			<input type="range" class="input" value="15" id="br" min="0" max="100">
 			</div>
+
+			<div class="card">
+			<b>box background-color</b>	<br>
+			<input type="color" class="input" id="color" >
+			</div>
+
 		</div>
 	</div>
 	<div class="code-show">
-		<h3>Code</h3>
-		<span id="code">text-shadow:<b id="f"></b> <b id="s"></b> <b id="l"></b> <b id="c"></b>  </span>
-		<span id="text-color">color:<b id="ct"></span>
+		<h2>Code</h2>
+		<span class="code">border-radius:<b id="t"></b>  <b id="l"></b><b id="b"></b>  <b id="r"></b> </span>
 	</div>
-</div>
-
-
+</div>		
 <!-- footer -->
 <footer class="container-footer">
 	<div class="container-outer">
