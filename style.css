@@ -197,6 +197,9 @@ padding: 10px 20px;
 	text-shadow: 2px 3px 4px #576574;
 
 }
+.container-out .container-outer .container-card button a{
+		text-decoration:none;
+}
 .container-footer{
 	background: #222f3e;
 	min-width: 100%;
