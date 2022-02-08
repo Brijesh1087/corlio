@@ -3,17 +3,17 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title id="title">text shadow</title>
+	<title id="title">style</title>
 	<link rel="stylesheet" href="style.css">
 	<script type="text/javascript" src="index.js"></script>
       <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+	
 	
 </head>
 <body>
 <nav class="nav">
 	<div class="container">
-		<a href="./index.html" class="navbar"><b>C</b>orlio</a>
-		
+		<a href="" class="navbar"><b>C</b>orlio</a>
 		<div class="dropdown">
 		  <button class="dropbtn">CSS</button>
 		  <div class="dropdown-content">
@@ -28,7 +28,7 @@
 		  </div>
 		</div>
 
-
+		
 	</div>
 </nav>
 <!-- home -->
@@ -40,51 +40,23 @@
 		<button class="btn-home">More Reviewe</button>
 	</div>
 </div>
-<!-- work -->
-
-<div class="container-border">
+<!-- div for font size -->
+<div class="container-fontSize">
 	<div class="container-inner">
-		<div id="span" contenteditable> Css Styling From Corlio</div>
-		<div class="input-outer">
+		<h2 class="font" contenteditable id="font">Css Styling From Corlio</h2>
+		<div class="card">
+			<b>Font Size</b>
+			<input type="number" value="24" max='100' id="number" min="13">
 
-			<div class="container-card">
-			<b>border-width</b><br>
-			<input type="number" class="input" id="width" min="0" maxlength="40">
-			</div>
-
-			
-			<div class="container-card">
-			<b>border-shape</b><br>
-			<select id="sape">
-				<option value="dotted">dotted</option>
-				<option value="solid">solid</option>
-				<option value="double">double</option>
-				<option value="dashed">dashed</option>
-				<option value="groove">groove</option>
-				<option value="inset">inset</option>
-				<option value="outset">outset</option>
-				<option value="hidden">hidden</option>
-			</select>
-			</div>
-
-			<div class="container-card">
-			<b>border-color</b><br>
+			<br><b>Color</b>
 			<input type="color" id="color" >
-			</div>
-
-			<div class="container-card">
-			<b>box-color</b><br>
-			<input type="color" id="color-box" >
-			</div>
-
 		</div>
 	</div>
-	<div class="code-s">
-		<h3>Code</h3>
-		<span id="code">border: <b id="w"></b> <b id="s"></b> <b id="c"></b>  </span>
+	<div class="code-show">
+		<h2>Code</h2>
+		<span class="code">font-size: <b id="c"></b></span>
 	</div>
 </div>
-
 
 <!-- footer -->
 <footer class="container-footer">

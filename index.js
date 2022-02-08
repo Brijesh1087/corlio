@@ -65,3 +65,15 @@ setInterval(()=>{
 		document.getElementById('span').style.backgroundColor=color;
 
 	},speed)
+
+	// font size
+	setInterval(()=>{
+		let color = document.getElementById('color').value;
+		let range = document.getElementById('number').value;
+		
+		document.getElementById('font').style.fontSize=`${range}px`;
+		document.getElementById('font').style.color=`${color}`;
+		document.getElementById('c').innerText=`${range}px`
+	},500)
+	// filter
+	

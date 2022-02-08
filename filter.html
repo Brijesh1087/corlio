@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title id="title">filter</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script type="text/javascript" src="index.js"></script> -->
+      <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+
+
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="container">
+            <a href="" class="navbar"><b>C</b>orlio</a>
+            <div class="dropdown">
+                <button class="dropbtn">CSS</button>
+                <div class="dropdown-content">
+                    <a href="./text-shadow.html">Text Shadow</a>
+                    <a href="./box-shadow.html">Box Shadow</a>
+                    <a href="./border.html">Border</a>
+                    <a href="./border-radius.html">Border Radius</a>
+                    <a href="./background-color.html">Background Color</a>
+                    <a href="./font-size.html">Font Size</a>
+                    <a href="./rotate.html">Rotate</a>
+                    <a href="./filter.html">Filter</a>
+                </div>
+            </div>
+
+
+        </div>
+    </nav>
+    <!-- home -->
+    <div class="container-home">
+        <div class="container-inner">
+            <h2 class="header"> <b>C</b>ss <b>s</b>tyling From <b>C</b>orlio</h2>
+            <p class="p">this is a css styling and code generator</p>
+            <br>
+            <button class="btn-home">More Reviewe</button>
+        </div>
+    </div>
+    <!-- div for font size -->
+    <div class="container-filter">
+        <div class="container-inner">
+            <img src="./img/filter.png" alt="filter" id="filter">
+            <div class="container-input">
+
+                <div class="card">
+                    <b>Blur</b>
+                    <input type="number" maxlength="3" minlength="1" id="blur" max="100" min="0" value="4">
+                </div>
+
+                <div class="card">
+                    <b>brightness</b>
+                    <input type="number" maxlength="3" minlength="1" id="brightness" max="100" min="0" value="4">
+                </div>
+                <div class="card">
+                    <b>contrast</b>
+                    <input type="number" maxlength="3" minlength="1" id="contrast" max="100" min="0" value="4">
+                </div>
+
+                <div class="card">
+                    <b>seturate</b>
+                    <input type="number" maxlength="3" minlength="1" id="seturate" max="100" min="0" value="4">
+                </div>
+
+                <div class="card">
+                    <b>grayscale</b>
+                    <input type="number" maxlength="3" minlength="1" id="grayscale" max="100" min="0" value="4">
+                </div>
+
+                <div class="card">
+                    <b>hue-rotate</b>
+                    <input type="number" maxlength="3" minlength="1" id="hue-rotate" max="100" min="0" value="4">
+                </div>
+
+                <div class="card">
+                    <b>invert</b>
+                    <input type="number" maxlength="3" minlength="1" id="invert" max="100" min="0" value="4">
+                </div>
+
+                <div class="card">
+                    <b>opacity</b>
+                    <input type="number" maxlength="3" minlength="1" id="opacity"  max="100" min="0" value="4">
+                </div>
+
+                <div class="card">
+                    <b>sepia</b>
+                    <input type="number" maxlength="3" minlength="1" id="sepia" max="100" min="0" value="4">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="code-show">
+        	<h2>Code</h2>
+        	<span class="code">filter: <b id="code"></b> </span>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="container-footer">
+        <div class="container-outer">
+            <div class="inner">
+                <a href=""><b>Facebook</b></a>
+                <a href=""><b>Github</b></a>
+                <a href=""><b>Instagram</b></a>
+            </div>
+            <h3 class="copyright">Copyright 2022</h3>
+        </div>
+    </footer>
+    <script>
+        let data = '';
+        let blur = document.getElementById('blur');
+        blur.addEventListener('input', (e) => {
+            document.getElementById('filter').style.filter = `blur(${blur.value}px)`;
+            data=`blur(${blur.value}px)`;
+        })
+      
+
+        let brightness = document.getElementById('brightness');
+        brightness.addEventListener('input', (e) => {
+            document.getElementById('filter').style.filter = `brightness(${brightness.value}%)`;
+            data =  `brightness(${brightness.value}%)`;
+        })
+
+        let contrast = document.getElementById('contrast');
+        contrast.addEventListener('input', (e) => {
+            document.getElementById('filter').style.filter = `contrast(${blur.value}%)`;
+            data =  `contrast(${blur.value}%)`;
+        })
+
+          let seturate = document.getElementById('seturate');
+            seturate.addEventListener('input', (e) => {
+            document.getElementById('filter').style.filter= `saturate(${seturate.value})`;
+            data =  `saturate(${seturate.value})`;
+        })
+
+          let grayscale = document.getElementById('grayscale');
+            grayscale.addEventListener('input', (e) => {
+            document.getElementById('filter').style.filter = `grayscale(${grayscale.value}%)`;
+            data = `grayscale(${grayscale.value}%)`;
+        })
+
+
+          let huerotate = document.getElementById('hue-rotate');
+            huerotate.addEventListener('input', (e) => {
+            document.getElementById('filter').style.filter = `hue-rotate(${huerotate.value}deg)`;
+            data = `hue-rotate(${huerotate.value}deg)`;
+
+        })
+
+            let invert = document.getElementById('invert');
+            invert.addEventListener('input', (e) => {
+            document.getElementById('filter').style.filter = `invert(${invert.value}%)`;
+            data = `invert(${invert.value}%)`; 
+
+        })
+
+            let opacity = document.getElementById('opacity');
+            opacity.addEventListener('input', (e) => {
+            document.getElementById('filter').style.filter = `opacity(${opacity.value}%)`
+            data = `opacity(${opacity.value}%)`
+        })
+
+            let sepia = document.getElementById('sepia');
+            sepia.addEventListener('input', (e) => {
+            document.getElementById('filter').style.filter = `sepia(${sepia.value}%)`
+            data = `sepia(${sepia.value}%)`
+        })
+
+              setInterval(()=>{
+            document.getElementById('code').innerText=data+';';
+        },10)
+    </script>
+</body>
+
+</html>
